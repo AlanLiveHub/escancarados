@@ -7,6 +7,7 @@ Este é um projeto de landing page responsiva baseada no template "Agency" do St
 * JavaScript (ES6) – interações e integração com APIs
 * Bootstrap 4/5 – responsividade e componentes visuais
 * FormSubmit – envio de mensagens de contato por e-mail, sem necessidade de backend
+* Github-pages 
 
 ### ✨ Funcionalidades
 * Formulário de contato funcional integrado com FormSubmit
