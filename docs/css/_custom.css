@@ -1,0 +1,63 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.trumbs-podcast {
+  width: 156px;
+  height: 156px;
+}
+
+@media (max-width: 1199px) {
+  .trumbs-podcast {
+    width: 136px;
+    height: 136px;
+  }
+}
+@media (max-width: 991px) {
+  .trumbs-podcast {
+    width: 86px;
+    height: 86px;
+  }
+}
+@media (max-width: 767px) {
+  .trumbs-podcast {
+    width: 66px;
+    height: 66px;
+  }
+}
+
+.limit-5-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.timeline-image:hover {
+  border: 7px solid #ffc800 !important;
+}
+
+.center-mid {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+#mainNav.navbar-note {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  background-color: #212529 !important;
+}

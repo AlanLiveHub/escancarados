@@ -1,0 +1,12 @@
+{
+    "name": "meu-site2",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "serve docs -l 8083",
+        "dev": "live-server docs --port=8083"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.2",
+        "serve": "^14.2.4"
+    }
+}

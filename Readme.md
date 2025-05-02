@@ -1,0 +1,3 @@
+- para instalar as dependencias do projeto: `npm install`
+- para ver o projeto como ficara em produção: `npm start`
+- para desenvolvimento: `npm run dev`
