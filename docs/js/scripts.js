@@ -110,6 +110,9 @@ window.addEventListener('DOMContentLoaded', event => {
     // Inicialmente desativa o botão
     submitBtn.disabled = true;
 
+    // Define o redirecionamento dinâmico após o envio do formulário
+    document.getElementById('form-next').value = window.location.origin + "/pages/contact-thanks.html";
+
 });
 
 
@@ -129,36 +132,18 @@ function listarVideos() {
         let count = 0;
         
         for (let entry of entries) {
-
-            console.log(entry)
             
           const title = entry.getElementsByTagName('title')[0]?.textContent;
           const videoId = entry.getElementsByTagNameNS('http://www.youtube.com/xml/schemas/2015', 'videoId')[0]?.textContent;
-
           const published = entry.getElementsByTagName('published')[0]?.textContent;
-
           const description = entry.getElementsByTagName('media:description')[0]?.textContent;
-
           const thumbnail = entry.getElementsByTagName('media:thumbnail')[0]?.getAttribute('url');
-
-          console.log(thumbnail)
   
           if (!title || !videoId) continue;
-  
-        //   const videoHTML = `
-        //     <div style="margin-bottom: 20px;">
-        //       <h3>${title}</h3>
-        //       <iframe width="560" height="315"
-        //         src="https://www.youtube.com/embed/${videoId}"
-        //         frameborder="0" allowfullscreen></iframe>
-        //     </div>
-        //   `;
-
 
             const videoHTML = `
                 ${count == 1 ? '<li class="timeline-inverted">' : '<li>'}
                 
-
                 <div class="timeline-image portfolio-link"
                     data-bs-toggle="modal"
                     data-bs-target="#modal_video_podcast"
@@ -189,7 +174,6 @@ function listarVideos() {
             }
 
             container.innerHTML += videoHTML;
-
             
         }
 

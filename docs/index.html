@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>ESCANCARADOS2</title>
+        <title>ESCANCARADOS</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.png" /> -->
+        <link rel="icon" type="image/png" sizes="16x16"  href="assets/favicon.png">
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -22,7 +23,14 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <!-- <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a> -->
-                <a class="navbar-brand" href="#page-top" style="font-family: 'Great Vibes', cursive;">ESCANCARADOS</a>
+               
+                <a class="navbar-brand" href="#page-top" style="font-family: 'Great Vibes', cursive;">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="assets/img/logos/logo-branca.png" alt="..." />
+                        <span class="mx-2">ESCANCARADOS</span>
+                    </div>
+                </a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -42,7 +50,7 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Bem-vindo ao ESCANCARADOS!</div>
-                <div class="masthead-heading text-uppercase">Viver a arte, viver da arte</div>
+                <div class="masthead-heading text-uppercase">Vivendo a arte de viver da arte</div>
                 <!-- <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a> -->
             </div>
         </header>
@@ -154,7 +162,7 @@
                     <input type="hidden" name="_captcha" value="true">
 
                     <!-- Destino de redirecionamento após envio -->
-                    <input type="hidden" name="_next" value="http://localhost:8083/pages/contact-thanks.html">
+                    <input type="hidden" name="_next" id="form-next">
 
                     <input type="hidden" name="_subject" value="Contato-Escancarado">
 
