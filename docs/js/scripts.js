@@ -111,7 +111,7 @@ window.addEventListener('DOMContentLoaded', event => {
     submitBtn.disabled = true;
 
     // Define o redirecionamento dinâmico após o envio do formulário
-    document.getElementById('form-next').value = window.location.origin + "/pages/contact-thanks.html";
+    document.getElementById('form-next').value = window.location.origin + "escancarados/pages/contact-thanks.html";
 
 });
 
