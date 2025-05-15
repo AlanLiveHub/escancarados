@@ -10876,8 +10876,8 @@ p {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  /* padding-top: 1rem; */
+  /* padding-bottom: 1rem; */
   background-color: #212529;
 }
 #mainNav .navbar-toggler {
@@ -10887,7 +10887,7 @@ p {
   text-transform: uppercase;
   font-weight: 700;
 }
-#mainNav .navbar-brand {
+/* #mainNav .navbar-brand {
   color: #ffc800;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
@@ -10896,7 +10896,7 @@ p {
 }
 #mainNav .navbar-brand img {
   height: 1.5rem;
-}
+} */
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
@@ -10907,36 +10907,76 @@ p {
   color: #ffc800;
 }
 
+
+.logo_main {
+
+
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
+  color: #fff;
+  /* background-image: url("../assets/img/header-bg.jpg"); */
+    background-image: url("../assets/img/logos/logo_black.svg");
+  height: 5rem;
+  width: 5rem;
+    background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  margin-left: auto;
+  }
+
 @media (min-width: 992px) {
-  #mainNav {
+  /* #mainNav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
     background-color: transparent;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-  }
+  } */
   #mainNav .navbar-brand {
     font-size: 1.5em;
     transition: font-size 0.3s ease-in-out;
+    
   }
   #mainNav .navbar-brand img {
     height: 2rem;
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
     background-color: #212529;
   }
+
+
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
+    position: relative;
+
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      width: unset;
+      height: unset;
+      color: white;
+      background-color: transparent;
+      transition: height 0.3s ease-in-out;
+
   }
+
+
   #mainNav.navbar-shrink .navbar-brand svg,
-  #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
+  #mainNav.navbar-shrink .navbar-brand .logo_main {
+    height: 2rem;
+    width: 2rem;
+    background-image: url("../assets/img/logos/logo_white.svg");
+    transition: height 0.3s ease-in-out;
+
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
+    background-image: url("../assets/img/logos/logo_white.svg");
   }
   #mainNav .navbar-nav .nav-item:last-child {
     margin-right: 0;
